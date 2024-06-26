@@ -245,15 +245,25 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
     }
 
     /**
-     * Generic method called when an object has been exported with var_export() functions
+     * Method called when an object has been exported with var_export() functions
      * It allows to return an object instantiated with the values
      *
-     * @uses WsdlClass::_set()
      * @param array  $_array     the exported values
-     * @param string $_className optional (used by inherited classes in order to always call this method)
      * @return WsdlClass|null
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
+    }
+
+    /**
+     * Generic method that returns an object instantiated with the values.
+     *
+     * @uses WsdlClass::_set()
+     * @param array  $_array     the values
+     * @param string $_className (used by derived classes in order to always call this method)
+     * @return $_className|null
+     */
+    protected static function create(array $_array, $_className): object {
         if (class_exists($_className)) {
             $object = @new $_className();
             if (is_object($object) && is_subclass_of($object, 'WsdlClass')) {
@@ -261,8 +271,9 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
                     $object->_set($name, $value);
             }
             return $object;
-        } else
-            return null;
+        }
+        else
+            throw new Exception("Attempted to create a class that does not exist.");
     }
 
     /**
@@ -619,7 +630,7 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @uses WsdlClass::getInternArrayToIterateIsArray()
      * @return int
      */
-    public function count() {
+    public function count(): int {
         return $this->getInternArrayToIterateIsArray() ? count($this->getInternArrayToIterate()) : -1;
     }
 
@@ -629,7 +640,7 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @uses WsdlClass::offsetGet()
      * @return mixed
      */
-    public function current() {
+    public function current(): mixed {
         return $this->offsetGet($this->internArrayToIterateOffset);
     }
 
@@ -640,8 +651,9 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @uses WsdlClass::setInternArrayToIterateOffset()
      * @return int
      */
-    public function next() {
-        return $this->setInternArrayToIterateOffset($this->getInternArrayToIterateOffset() + 1);
+    public function next(): void {
+        $this->setInternArrayToIterateOffset($this->getInternArrayToIterateOffset() + 1);
+        return;
     }
 
     /**
@@ -650,8 +662,9 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @uses WsdlClass::setInternArrayToIterateOffset()
      * @return int
      */
-    public function rewind() {
-        return $this->setInternArrayToIterateOffset(0);
+    public function rewind(): void {
+        $this->setInternArrayToIterateOffset(0);
+        return;
     }
 
     /**
@@ -661,7 +674,7 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @uses WsdlClass::offsetExists()
      * @return bool true|false
      */
-    public function valid() {
+    public function valid(): bool {
         return $this->offsetExists($this->getInternArrayToIterateOffset());
     }
 
@@ -671,7 +684,7 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @uses WsdlClass::getInternArrayToIterateOffset()
      * @return int
      */
-    public function key() {
+    public function key(): mixed {
         return $this->getInternArrayToIterateOffset();
     }
 
@@ -765,7 +778,7 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @param int $_offset
      * @return bool true|false
      */
-    public function offsetExists($_offset) {
+    public function offsetExists(mixed $_offset): bool {
         return ($this->getInternArrayToIterateIsArray() && array_key_exists($_offset, $this->getInternArrayToIterate()));
     }
 
@@ -776,7 +789,7 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @param int $_offset
      * @return mixed
      */
-    public function offsetGet($_offset) {
+    public function offsetGet(mixed $_offset): mixed {
         return $this->offsetExists($_offset) ? $this->internArrayToIterate[$_offset] : null;
     }
 
@@ -787,8 +800,8 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @param mixed $_value
      * @return null
      */
-    public function offsetSet($_offset, $_value) {
-        return null;
+    public function offsetSet(mixed $_offset, mixed $_value): void {
+        return;
     }
 
     /**
@@ -797,8 +810,8 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      * @param mixed $_offset
      * @return null
      */
-    public function offsetUnset($_offset) {
-        return null;
+    public function offsetUnset(mixed $_offset): void {
+        return;
     }
 
     /**
@@ -995,7 +1008,7 @@ class WsdlClass extends stdClass implements ArrayAccess, Iterator, Countable {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }

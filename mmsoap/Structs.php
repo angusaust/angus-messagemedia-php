@@ -116,12 +116,12 @@ class StructAccountDetailsType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructAccountDetailsType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -129,7 +129,7 @@ class StructAccountDetailsType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -203,12 +203,12 @@ class StructAuthenticationType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructAuthenticationType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -216,7 +216,7 @@ class StructAuthenticationType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -264,12 +264,12 @@ class StructBlockNumbersBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructBlockNumbersBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -277,7 +277,7 @@ class StructBlockNumbersBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -351,12 +351,12 @@ class StructBlockNumbersRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructBlockNumbersRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -364,7 +364,7 @@ class StructBlockNumbersRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -412,12 +412,12 @@ class StructBlockNumbersResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructBlockNumbersResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -425,7 +425,7 @@ class StructBlockNumbersResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -531,12 +531,12 @@ class StructBlockNumbersResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructBlockNumbersResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -544,7 +544,7 @@ class StructBlockNumbersResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -594,12 +594,12 @@ class StructCheckRepliesBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckRepliesBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -607,7 +607,7 @@ class StructCheckRepliesBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -681,12 +681,12 @@ class StructCheckRepliesRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckRepliesRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -694,7 +694,7 @@ class StructCheckRepliesRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -742,12 +742,12 @@ class StructCheckRepliesResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckRepliesResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -755,7 +755,7 @@ class StructCheckRepliesResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -859,12 +859,12 @@ class StructCheckRepliesResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckRepliesResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -872,7 +872,7 @@ class StructCheckRepliesResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -922,12 +922,12 @@ class StructCheckRepliesType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckRepliesType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -935,7 +935,7 @@ class StructCheckRepliesType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -985,12 +985,12 @@ class StructCheckReportListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckReportListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -998,7 +998,7 @@ class StructCheckReportListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1048,12 +1048,12 @@ class StructCheckReportsBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckReportsBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1061,7 +1061,7 @@ class StructCheckReportsBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1135,12 +1135,12 @@ class StructCheckReportsRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckReportsRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1148,7 +1148,7 @@ class StructCheckReportsRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1196,12 +1196,12 @@ class StructCheckReportsResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckReportsResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1209,7 +1209,7 @@ class StructCheckReportsResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1313,12 +1313,12 @@ class StructCheckReportsResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckReportsResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1326,7 +1326,7 @@ class StructCheckReportsResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1374,12 +1374,12 @@ class StructCheckUserRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckUserRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1387,7 +1387,7 @@ class StructCheckUserRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1435,12 +1435,12 @@ class StructCheckUserResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckUserResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1448,7 +1448,7 @@ class StructCheckUserResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1496,12 +1496,12 @@ class StructCheckUserResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructCheckUserResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1509,7 +1509,7 @@ class StructCheckUserResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1559,12 +1559,12 @@ class StructConfirmItemType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmItemType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1572,7 +1572,7 @@ class StructConfirmItemType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1620,12 +1620,12 @@ class StructConfirmRepliesBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmRepliesBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1633,7 +1633,7 @@ class StructConfirmRepliesBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1707,12 +1707,12 @@ class StructConfirmRepliesRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmRepliesRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1720,7 +1720,7 @@ class StructConfirmRepliesRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1768,12 +1768,12 @@ class StructConfirmRepliesResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmRepliesResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1781,7 +1781,7 @@ class StructConfirmRepliesResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1831,12 +1831,12 @@ class StructConfirmRepliesResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmRepliesResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1844,7 +1844,7 @@ class StructConfirmRepliesResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1894,12 +1894,12 @@ class StructConfirmReplyListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmReplyListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1907,7 +1907,7 @@ class StructConfirmReplyListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -1957,12 +1957,12 @@ class StructConfirmReportListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmReportListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -1970,7 +1970,7 @@ class StructConfirmReportListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2018,12 +2018,12 @@ class StructConfirmReportsBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmReportsBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2031,7 +2031,7 @@ class StructConfirmReportsBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2105,12 +2105,12 @@ class StructConfirmReportsRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmReportsRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2118,7 +2118,7 @@ class StructConfirmReportsRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2166,12 +2166,12 @@ class StructConfirmReportsResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmReportsResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2179,7 +2179,7 @@ class StructConfirmReportsResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2229,12 +2229,12 @@ class StructConfirmReportsResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructConfirmReportsResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2242,7 +2242,7 @@ class StructConfirmReportsResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2290,12 +2290,12 @@ class StructDeleteScheduledMessagesBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructDeleteScheduledMessagesBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2303,7 +2303,7 @@ class StructDeleteScheduledMessagesBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2377,12 +2377,12 @@ class StructDeleteScheduledMessagesRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructDeleteScheduledMessagesRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2390,7 +2390,7 @@ class StructDeleteScheduledMessagesRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2438,12 +2438,12 @@ class StructDeleteScheduledMessagesResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructDeleteScheduledMessagesResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2451,7 +2451,7 @@ class StructDeleteScheduledMessagesResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2501,12 +2501,12 @@ class StructDeleteScheduledMessagesResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructDeleteScheduledMessagesResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2514,7 +2514,7 @@ class StructDeleteScheduledMessagesResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2562,12 +2562,12 @@ class StructFaultResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructFaultResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2575,7 +2575,7 @@ class StructFaultResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2629,12 +2629,12 @@ class StructFaultResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructFaultResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2642,7 +2642,7 @@ class StructFaultResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2692,12 +2692,12 @@ class StructGetBlockedNumbersBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructGetBlockedNumbersBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2705,7 +2705,7 @@ class StructGetBlockedNumbersBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2779,12 +2779,12 @@ class StructGetBlockedNumbersRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructGetBlockedNumbersRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2792,7 +2792,7 @@ class StructGetBlockedNumbersRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2840,12 +2840,12 @@ class StructGetBlockedNumbersResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructGetBlockedNumbersResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2853,7 +2853,7 @@ class StructGetBlockedNumbersResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -2957,12 +2957,12 @@ class StructGetBlockedNumbersResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructGetBlockedNumbersResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -2970,7 +2970,7 @@ class StructGetBlockedNumbersResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3020,12 +3020,12 @@ class StructMessageErrorListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageErrorListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3033,7 +3033,7 @@ class StructMessageErrorListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3169,12 +3169,12 @@ class StructMessageErrorType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageErrorType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3182,7 +3182,7 @@ class StructMessageErrorType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3232,12 +3232,12 @@ class StructMessageIdListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageIdListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3245,7 +3245,7 @@ class StructMessageIdListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3295,12 +3295,12 @@ class StructMessageIdType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageIdType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3308,7 +3308,7 @@ class StructMessageIdType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3391,12 +3391,12 @@ class StructMessageListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3404,7 +3404,7 @@ class StructMessageListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3454,12 +3454,12 @@ class StructMessageTagListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageTagListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3467,7 +3467,7 @@ class StructMessageTagListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3543,12 +3543,12 @@ class StructMessageTagType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageTagType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3556,7 +3556,7 @@ class StructMessageTagType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3834,12 +3834,12 @@ class StructMessageType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructMessageType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3847,7 +3847,7 @@ class StructMessageType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3897,12 +3897,12 @@ class StructRecipientsType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructRecipientsType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -3910,7 +3910,7 @@ class StructRecipientsType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -3987,12 +3987,12 @@ class StructRecipientType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructRecipientType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4000,7 +4000,7 @@ class StructRecipientType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4051,12 +4051,12 @@ class StructReplyListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructReplyListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4064,7 +4064,7 @@ class StructReplyListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4252,12 +4252,12 @@ class StructReplyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructReplyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4265,7 +4265,7 @@ class StructReplyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4316,12 +4316,12 @@ class StructReportListType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructReportListType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4329,7 +4329,7 @@ class StructReportListType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4491,12 +4491,12 @@ class StructReportType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructReportType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4504,7 +4504,7 @@ class StructReportType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4552,12 +4552,12 @@ class StructSendMessagesBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructSendMessagesBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4565,7 +4565,7 @@ class StructSendMessagesBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4639,12 +4639,12 @@ class StructSendMessagesRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructSendMessagesRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4652,7 +4652,7 @@ class StructSendMessagesRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4700,12 +4700,12 @@ class StructSendMessagesResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructSendMessagesResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4713,7 +4713,7 @@ class StructSendMessagesResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4873,12 +4873,12 @@ class StructSendMessagesResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructSendMessagesResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4886,7 +4886,7 @@ class StructSendMessagesResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -4934,12 +4934,12 @@ class StructUnblockNumbersBodyType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructUnblockNumbersBodyType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -4947,7 +4947,7 @@ class StructUnblockNumbersBodyType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -5021,12 +5021,12 @@ class StructUnblockNumbersRequestType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructUnblockNumbersRequestType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -5034,7 +5034,7 @@ class StructUnblockNumbersRequestType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -5082,12 +5082,12 @@ class StructUnblockNumbersResponseType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructUnblockNumbersResponseType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -5095,7 +5095,7 @@ class StructUnblockNumbersResponseType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -5201,12 +5201,12 @@ class StructUnblockNumbersResultType extends WsdlClass {
      * It allows to return an object instantiated with the values
      *
      * @see  WsdlClass::__set_state()
-     * @uses WsdlClass::__set_state()
+     * @uses WsdlClass::create()
      * @param array $_array the exported values
      * @return StructUnblockNumbersResultType
      */
-    public static function __set_state(array $_array, $_className = __CLASS__) {
-        return parent::__set_state($_array, $_className);
+    public static function __set_state(array $_array): object {
+        return self::create($_array, __CLASS__);
     }
 
     /**
@@ -5214,7 +5214,7 @@ class StructUnblockNumbersResultType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }

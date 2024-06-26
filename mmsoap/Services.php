@@ -47,7 +47,7 @@ class ServiceBlock extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -119,7 +119,7 @@ class ServiceCheck extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -174,7 +174,7 @@ class ServiceConfirm extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -212,7 +212,7 @@ class ServiceDelete extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -250,7 +250,7 @@ class ServiceGet extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -288,7 +288,7 @@ class ServiceSend extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -326,7 +326,7 @@ class ServiceUnblock extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }

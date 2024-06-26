@@ -18,11 +18,11 @@ class MMSoapClient extends SoapClient {
 
     const SOAP_ENV_NS_URI = 'http://schemas.xmlsoap.org/soap/envelope/';
 
-    public function __construct($wsdl, $options = null) {
+    public function __construct(?string $wsdl, array $options = null) {
         parent::__construct($wsdl, $options);
     }
 
-    public function __doRequest($request, $location, $action, $version, $one_way = 0) {
+    public function __doRequest(string $request, string $location, string $action, int $version, bool $one_way = false): ?string {
         $dom = new DOMDocument('1.0');
 
         // loads the SOAP request to the Document
@@ -38,6 +38,9 @@ class MMSoapClient extends SoapClient {
         $request = $dom->saveXML();
 
         $response = parent::__doRequest($request, $location, $action, $version, $one_way);
+        if ($response === null)
+            return null;
+        
         // fix & bug which causes the following warning;
         // PHP Warning:  DOMDocument::createElement(): unterminated entity reference 
         $response = str_replace('&', '&amp;', $response);
@@ -49,7 +52,7 @@ class MMSoapClient extends SoapClient {
     /**
      * Needed to move attributes out into elements which is what the SoapClient seems to expect.
      */
-    public function reJig($response) {
+    public function reJig(string $response): ?string {
         $responseDom = new DOMDocument('1.0');
         $responseDom->loadXML($response);
 
@@ -59,7 +62,8 @@ class MMSoapClient extends SoapClient {
         }
 
         $this->reJigNode($responseDom, $responseDom->documentElement);
-        return $responseDom->saveXML();
+        $result = $responseDom->saveXML();
+        return $result === false ? null : $result;
     }
 
     public function reJigNode($dom, $node) {

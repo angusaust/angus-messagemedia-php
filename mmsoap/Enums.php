@@ -52,7 +52,7 @@ class EnumDeliveryStatusType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -102,7 +102,7 @@ class EnumFaultErrorCodeType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -159,7 +159,7 @@ class EnumMessageErrorCodeType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -195,7 +195,7 @@ class EnumMessageFormatType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -245,7 +245,7 @@ class EnumMessageSendModeType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }
@@ -281,7 +281,7 @@ class EnumMessageSendVersionType extends WsdlClass {
      *
      * @return string __CLASS__
      */
-    public function __toString() {
+    public function __toString(): string {
         return __CLASS__;
     }
 }

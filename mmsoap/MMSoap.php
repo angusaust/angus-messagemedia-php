@@ -213,4 +213,12 @@ class MMSoap {
         }
         return new StructConfirmReportListType($result);
     }
+
+    public $serviceCheck;
+    public $serviceGet;
+    public $serviceSend;
+    public $serviceBlock;
+    public $serviceUnblock;
+    public $serviceConfirm;
+    public $authentication;
 }
